@@ -1,0 +1,17 @@
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+    //    initially i and j at zeroeth position
+       int i = 0, j = 0;
+    //     loop will not  end until the condition becomesfalse
+    for (; j < nums.size(); j++) {
+        // check if the arr[j] not equal to zero if yes swap arr[i] with arr[j]
+        if (nums[j] != 0) {
+            //exchange
+            swap(nums[i], nums[j]);
+            i++;
+        }
+    }
+        
+    }
+};
